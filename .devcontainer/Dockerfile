@@ -8,6 +8,12 @@ RUN apt-get update \
 # Verify git and process tools are installed
 RUN apt-get install -y git procps
 
+# Install python
+RUN apt-get install -y python3 python3-pip python3-tk
+
+# Install xauth
+RUN apt-get install xauth
+
 # Install yarn
 RUN apt-get install -y curl apt-transport-https lsb-release \
     && curl -sS https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/pubkey.gpg | apt-key add - 2>/dev/null \

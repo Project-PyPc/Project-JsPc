@@ -21,12 +21,17 @@ function startServer() {
     temporaryDisposable = {};
 
   app.use('/xterm.css', express.static(__dirname + '/../css/xterm.css'));
+  app.use('/index.css', express.static(__dirname + '/../css/index.css'))
   app.get('/logo.png', (req, res) => {
     res.sendFile(__dirname + '/logo.png');
   });
 
   app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/index.html')
+  })
+
+  app.get('/xterm', (req, res) => {
+    res.sendFile(__dirname + '/xterm.html');
   });
 
   app.get('/test', (req, res) => {
