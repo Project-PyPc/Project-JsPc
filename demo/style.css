@@ -82,8 +82,8 @@ pre {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: white;
-    color: #303030;
+    background-color: #f59014;
+    color: white;
   }
 
 /* Style the tab content */
