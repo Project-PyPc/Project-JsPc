@@ -9,7 +9,14 @@ RUN apt-get update \
 RUN apt-get install -y git procps
 
 # Install python
-RUN apt-get install -y python3 python3-pip python3-tk
+RUN apt-get install -y python3.10 python3.10-pip python3.10-tk
+
+# Install PHP
+RUN wget https://www.php.net/distributions/php-7.4.9.tar.gz
+RUN tar -zxf php-7.4.9.tar.gz
+RUN ./php-7.4.9/configure --enable-fpm --with-mysqli
+RUN make
+RUN make install
 
 # Create user Jackson
 RUN useradd jackson -m -d /home/jackson -s /bin/bash

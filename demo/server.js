@@ -42,6 +42,10 @@ function startServer() {
     res.sendFile(__dirname + '/style.css');
   });
 
+  app.get('/testexec.php', (req, res) => {
+    res.sendFile(__dirname + '/testexec.php')
+  })
+
   app.use('/dist', express.static(__dirname + '/dist'));
   app.use('/src', express.static(__dirname + '/src'));
 
