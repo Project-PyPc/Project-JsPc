@@ -11,8 +11,9 @@ RUN apt-get install -y git procps
 # Install python
 RUN apt-get install -y python3 python3-pip python3-tk
 
-# Install xauth
-RUN apt-get install xauth
+# Create user Jackson
+RUN useradd jackson -m -d /home/jackson -s /bin/bash
+RUN usermod -aG sudo jackson
 
 # Install yarn
 RUN apt-get install -y curl apt-transport-https lsb-release \
