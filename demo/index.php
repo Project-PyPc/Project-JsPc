@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="shortcut icon" type="image/png" href="demo/logo.png">
+<link rel="shortcut icon" type="image/png" href="/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/index.css" type="text/css">
 </head>
@@ -8,7 +8,7 @@
 
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="https://jacksoncraft859-didactic-giggle-6wjwjxg7r65f5qxx-3000.preview.app.github.dev/xterm">Xterm</a>
+  <a href="https://jacksoncraft859-ubiquitous-trout-wxwxwq7jr49hv4jw-3000.preview.app.github.dev/xterm">Xterm</a>
   <a href="https://github.com/jacksoncraft859/">Github</a>
 </div>
 <div id="banner" >
