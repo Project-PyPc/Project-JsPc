@@ -19,7 +19,7 @@
 </div>
 <p style="color:ghostwhite;">This site is hosted by Github Codespaces.</p>
 <hr>
-<form  style="color:ghostwhite" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<form style="color:ghostwhite" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         Login: <input type="text" name="fname">
         <input type="submit">
     </form>
@@ -35,7 +35,7 @@
             }
             elseif (($str) == "sudo skip login")
             {
-              
+              echo "sudo not implemented";
             }
             else
             {

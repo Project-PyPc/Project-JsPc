@@ -9,7 +9,13 @@ RUN apt-get update \
 RUN apt-get install -y git procps
 
 # Install python
-RUN apt-get install -y python3.10 python3.10-pip python3.10-tk
+RUN apt-get install -y wget build-essential libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev && \
+    cd /usr/src && \
+    wget https://www.python.org/ftp/python/3.11.2/Python-3.11.2.tgz && \
+    tar -xzf Python-3.11.2.tgz && \
+    cd Python-3.11.2 && \
+    ./configure --enable-optimizations && \
+    make altinstall
 
 # Install PHP
 RUN wget https://www.php.net/distributions/php-7.4.9.tar.gz
@@ -19,6 +25,8 @@ RUN make
 RUN make install
 
 # Create user Jackson
+# RUN pip3 install 'xonsh[full]'
+# RUN useradd jackson -m -d /home/jackson -s /usr/local/bin/xonsh
 RUN useradd jackson -m -d /home/jackson -s /bin/bash
 RUN usermod -aG sudo jackson
 
