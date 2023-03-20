@@ -1,5 +1,5 @@
-su -c "pip3.11 install 'xonsh[full]'" jackson
-su -c "pip3.11 install xontrib-powerline2" jackson
+su -c "/bin/bash && pip3.11 install 'xonsh[full]'" jackson
+su -c "/bin/bash && pip3.11 install xontrib-powerline2" jackson
 pip3.11 install 'xonsh[full]'
 pip3.11 install xontrib-powerline2
 which xonsh >> /etc/shells
