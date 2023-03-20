@@ -1,0 +1,47 @@
+xontrib load xlsd
+xontrib load coreutils
+execx($(zoxide init xonsh), 'exec', __xonsh__.ctx, filename='zoxide')
+if not 'OMX_HOME' in ${...}:
+    $OMX_HOME = p"~/.config/xonsh/oh-my-xonsh"
+
+# clone omx if needed
+if not pf"{$OMX_HOME}".exists():
+    git clone --depth=1 https://github.com/oh-my-xonsh/oh-my-xonsh $OMX_HOME
+
+# source oh-my-xonsh to give you the `omx` object
+source $OMX_HOME/oh-my-xonsh.xsh
+
+# choose your plugins
+omx.plugins = [
+    'autocmd',
+    'brew',
+    'clipboard',
+    'common_aliases',
+    'copydir',
+    'dash',
+    'git',
+    'gitignore',
+    'golang',
+    'iwd',
+    'macos',
+    'manpage_coloring',
+    'shrink_path',
+    'up',
+]
+
+# configure your plugins
+# omx.config["plugins.git.skip_aliases"] = True
+
+# initialize oh-my-xonsh
+aliases['piu'] = 'pip install -U @($args)'
+aliases['zls'] = 'z $arg0 && ls'
+aliases['iris'] = '@($args)'
+aliases['http-here'] = 'python3.11 -m http.server'
+$XONSH_COLOR_STYLE='default'
+$PL_PROMPT = 'who>short_cwd'
+$PL_RPROMPT = 'virtualenv>branch'
+$PL_TOOLBAR = '!'
+$XONTRIB_CD_LONG_DURATION = 5  # default
+$PL_SEP_MODE='round'
+xontrib load powerline2
+omx.init()
