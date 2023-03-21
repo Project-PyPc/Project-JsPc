@@ -12,13 +12,14 @@
   <a href="https://github.com/jacksoncraft859/">Github</a>
 </div>
 <div id="banner" >
-  <h1 style="color:ghostwhite; font-size:40px;">My Site</h1>
+  <h1 style="color:ghostwhite; font-size:40px;">Project JSPC</h1>
   <br>
-  <h5 style="color:ghostwhite;">By Jackson (aka. Jacksoncraft859)</h5>
+  <h5 style="color:ghostwhite;">By Jackson (aka. Jacksoncraft859) and Camden (aka. Hansolo267)</h5>
   <br>
 </div>
 <p style="color:ghostwhite;">This site is hosted by Github Codespaces.</p>
 <hr>
+<h1 style="color:ghostwhite;">Ignore</h1>
 <form style="color:ghostwhite" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         Login: <input type="text" name="fname">
         <input type="submit">

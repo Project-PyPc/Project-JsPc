@@ -15,9 +15,8 @@
     <div class="topnav">
       <a href="/">Home</a>
       <a class="active" href="/xterm">Xterm</a>
-      <a href="https://github.com/jacksoncraft859/">Github</a>
     </div>
-    <h1 style="color: white">Jackson's Shell - Xterm.js</h1>
+    <h1 style="color: white">Computer Shell - Xterm.js</h1>
     <div id="container">
       <div id="grid">
         <div id="terminal-container"></div>
@@ -29,6 +28,7 @@
           <button id= "stylebutton" class="tabLinks" onclick="openSection(event, 'style')">Style</button>
           <button id= "testbutton" class="tabLinks" onclick="openSection(event, 'test')">Test</button>
           <button id= "vtbutton" class="tabLinks" onclick="openSection(event, 'vt')">VT</button>
+          <button id= "guidebutton" class="tabLinks" onclick="openSection(event, 'guide')">Commands</button>
         </div>
         <div id="options" class="tabContent">
           <h3>Options</h3>
@@ -101,6 +101,13 @@
         <div id="vt" class="tabContent">
           <h3>VT</h3>
           <div id="vt-container"></div>
+        </div>
+        <div id="guide" class="tabContent">
+          <h3>Command Guide</h3>
+          <h5>more will be added eventually</h5>
+          <p>ls - List files in a directory.<br>
+            cd - chnage directory.<br>
+            uname - prints platform.</p>
         </div>
       </div>
     </div>
