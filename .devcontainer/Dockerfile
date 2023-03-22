@@ -28,6 +28,7 @@ RUN make install
 # RUN pip3 install 'xonsh[full]'
 # RUN useradd jackson -m -d /home/jackson -s /usr/local/bin/xonsh
 RUN useradd jackson -m -d /home/jackson -s /bin/bash
+RUN useradd camden -m -d /home/camden -s /bin/bash
 RUN usermod -aG sudo jackson
 
 # Install yarn

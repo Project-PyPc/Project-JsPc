@@ -1,0 +1,16 @@
+{
+  "type": "application",
+  "name": "UltrixSearch",
+  "icon": "icon.png",
+  "category": null,
+  "server": null,
+  "title": {
+    "en_EN": "UltrixSearch"
+  },
+  "description": {
+    "en_EN": "UltrixSearch"
+  },
+  "files": [
+    "main.js"
+  ]
+}

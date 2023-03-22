@@ -35,10 +35,13 @@
 //
 
 export default {
+  public: '/',
+  /*
   auth: {
     login: {
       username: 'demo',
       password: 'demo'
     }
   }
+  */
 };
