@@ -1,11 +1,10 @@
 {
   "name": "xterm.js",
   "dockerFile": "Dockerfile",
-  "appPort": 3000,
+  "appPort": [3000, 3001, 3002],
   "extensions": [
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "hbenl.vscode-mocha-test-adapter"
-],
-"forwardPorts": [3000, 3001, 3002]
+]
 }
