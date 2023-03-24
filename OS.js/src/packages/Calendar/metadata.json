@@ -1,0 +1,16 @@
+{
+  "type": "application",
+  "name": "Calendar",
+  "icon": "icon.png",
+  "category": null,
+  "server": null,
+  "title": {
+    "en_EN": "Calendar"
+  },
+  "description": {
+    "en_EN": "Calendar"
+  },
+  "files": [
+    "main.js"
+  ]
+}
