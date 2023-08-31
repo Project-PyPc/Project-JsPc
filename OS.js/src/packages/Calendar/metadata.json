@@ -2,7 +2,7 @@
   "type": "application",
   "name": "Calendar",
   "icon": "icon.png",
-  "category": null,
+  "category": "office",
   "server": null,
   "title": {
     "en_EN": "Calendar"

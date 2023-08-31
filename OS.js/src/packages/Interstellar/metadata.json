@@ -1,14 +1,14 @@
 {
   "type": "application",
-  "name": "WebNav",
+  "name": "Interstellar",
   "icon": "icon.png",
   "category": null,
   "server": null,
   "title": {
-    "en_EN": "WebNav"
+    "en_EN": "Interstellar"
   },
   "description": {
-    "en_EN": "WebNav"
+    "en_EN": "Interstellar"
   },
   "files": [
     "main.js"

@@ -40,6 +40,7 @@
     "@osjs/database-auth": "^1.0.8",
     "@osjs/dialogs": "^3.1.0",
     "@osjs/draw-application": "^1.2.12",
+    "@osjs/example-iframe-application": "^1.1.5",
     "@osjs/filemanager-application": "^1.6.2",
     "@osjs/freedesktop-sounds": "^3.0.3",
     "@osjs/gnome-icons": "^4.0.5",
@@ -61,7 +62,7 @@
     "@osjs/wolfenstein3d-application": "^1.0.2",
     "@osjs/xpra-application": "^1.0.9",
     "@osjs/xterm-application": "^1.4.0",
-    "hyperapp": "^1.2.10",
+    "hyperapp": "^1.1.2",
     "mysql": "^2.18.1",
     "typeface-roboto": "0.0.75"
   },

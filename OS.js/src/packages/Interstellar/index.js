@@ -9,10 +9,10 @@ const register = (core, args, options, metadata) => {
   // Create  a new Window instance
   proc
     .createWindow({
-      id: 'WebNavWindow',
+      id: 'InterstellarWindow',
       title: metadata.title.en_EN,
       icon: proc.resource(proc.metadata.icon),
-      dimension: {width: 400, height: 75},
+      dimension: {width: 400, height: 400},
       position: {left: 700, top: 200}
     })
     .on('destroy', () => proc.destroy())

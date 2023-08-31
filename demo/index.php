@@ -8,8 +8,8 @@
 
 <div class="topnav">
   <a class="active" href="index.php">Home</a>
-  <a href="https://jacksoncraft859-ubiquitous-trout-wxwxwq7jr49hv4jw-3000.preview.app.github.dev/xterm">Xterm</a>
-  <a href="https://jacksoncraft859-ubiquitous-trout-wxwxwq7jr49hv4jw-3002.preview.app.github.dev">Desktop</a>
+  <a href="https://refactored-barnacle-g6g6gvqwx7p257x-3000.app.github.dev/xterm">Xterm</a>
+  <a href="https://refactored-barnacle-g6g6gvqwx7p257x-3002.app.github.dev/">Desktop</a>
   <a href="https://github.com/jacksoncraft859/">Github</a>
 </div>
 <div id="banner" >

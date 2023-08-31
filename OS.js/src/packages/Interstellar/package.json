@@ -1,5 +1,5 @@
 {
-  "name": "WebNav",
+  "name": "Interstellar",
   "scripts": {
     "test": "npm run eslint",
     "eslint": "eslint *.js",
@@ -23,10 +23,7 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env",
-      ["@babel/plugin-transform-react-jsx", {
-        "pragma": "h"
-      }]
+      "@babel/preset-env"
     ],
     "plugins": [
       "@babel/plugin-transform-runtime"
