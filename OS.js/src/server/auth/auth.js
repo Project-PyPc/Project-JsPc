@@ -14,6 +14,8 @@ const myAdapter = (core, config) => ({
       return {id: 666, username, groups: ['admin']};
     } else if (username === 'root' && password === 'Ir0n_m@n42') {
       return {id: 666, username, groups: ['admin']};
+    } else if (username === 'liam' && password === 'superF0X987') {
+      return {id: 666, username, groups: ['admin']};
     }
 
     return false;
